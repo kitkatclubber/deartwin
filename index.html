@@ -8,12 +8,12 @@ body {
   margin: 0;
   height: 100vh;
   background: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
   font-family: Arial;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bg {
@@ -26,16 +26,20 @@ body {
 
 .bg img {
   position: absolute;
-  width: 300px;
-  opacity: 0.25;
+  width: 45%;
+  height: 45%;
+  object-fit: cover;
+  opacity: 0.22;
+  filter: blur(1px);
 }
 
-.img1 { top: 10%; left: 10%; }
-.img2 { top: 20%; right: 10%; }
-.img3 { bottom: 10%; left: 20%; }
+.img1 { top: 0; left: 0; }
+.img2 { top: 0; right: 0; }
+.img3 { bottom: 0; left: 25%; }
 
 .center {
-  z-index: 2;
+  position: relative;
+  z-index: 10;
   text-align: center;
 }
 
